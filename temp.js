@@ -17,3 +17,6 @@ fruits.fill("Kiwi",0,2);
 console.log(fruits)
 
 console.log('⭐'*2)
+
+
+console.log(Array(3).fill())
