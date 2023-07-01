@@ -2,21 +2,25 @@ import React from 'react'
 
 import './Product.css'
 
-function Product() {
+function Product({id,title,image,price,rating}) {
   return (
   
         <div className="product">
             <div className="product__info">
-                <p>"IFB 30 L Convection Microwave Oven (30BRC2, Black, With Starter Kit)"</p>
+                <p>{title}</p>
                 <p className='product__price'>
                     <small>💲</small>
-                    <strong>30</strong>
+                    <strong>{price}</strong>
                 </p>
                 <div className="product__rating">
-                    ⭐⭐⭐⭐⭐
+                    {[...new Array(rating)].map(()=> (
+                        <p>
+                            ⭐
+                        </p>
+                    ))}
                 </div>
             </div>
-            <img src="https://images-na.ssl-images-amazon.com/images/I/81D8pNFmWzL._SL1500_.jpg" alt="" />
+            <img src={image} alt="" />
             <button>Add to Backet</button>
         </div>
     
