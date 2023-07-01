@@ -9,7 +9,10 @@ import SearchIcon from '@mui/icons-material/Search';
 function Header() {
   return (
    
+
       <div className="header">
+
+        
         
             <div className="header__logo">
                 <StorefrontOutlinedIcon className="header__logoImage" fontSize="large"/>
