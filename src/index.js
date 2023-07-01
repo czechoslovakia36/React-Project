@@ -5,9 +5,7 @@ import App from './App';
 
 
 import { BrowserRouter, RouterProvider, createBrowserRouter } from 'react-router-dom';
-import Checkout from './Checkout';
-import Home from './Home';
-import Header from './Header';
+
 
 
 // const router = createBrowserRouter([
