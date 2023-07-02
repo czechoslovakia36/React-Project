@@ -6,6 +6,8 @@ import App from './App';
 
 import { BrowserRouter, RouterProvider, createBrowserRouter } from 'react-router-dom';
 
+import Use from './Use';
+import Use2 from './Use2';
 
 
 // const router = createBrowserRouter([
@@ -22,11 +24,12 @@ root.render(
   <React.StrictMode>
 
 
-{/* <RouterProvider  router={router} /> */}
+{/* <Use/> */}
+<Use2/>
 
-<BrowserRouter>
+{/* <BrowserRouter>
 <App/>
-</BrowserRouter>
+</BrowserRouter> */}
 
  
   </React.StrictMode>

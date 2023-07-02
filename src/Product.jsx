@@ -2,6 +2,8 @@ import React from 'react'
 
 import './Product.css'
 
+import { useStateValue } from './StateProvider'
+
 function Product({id,title,image,price,rating}) {
   return (
   
@@ -21,7 +23,7 @@ function Product({id,title,image,price,rating}) {
                 </div>
             </div>
             <img src={image} alt="" />
-            <button>Add to Backet</button>
+            <button onClick={addToBasket}>Add to Backet</button>
         </div>
     
   )
